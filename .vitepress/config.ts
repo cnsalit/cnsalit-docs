@@ -36,7 +36,7 @@ export default defineConfig({
           text: '가이드',
           items: [
             { text: '시작에 앞서', link: '/guide/hello' },
-            { text: 'commit 가이드', link: '/guide/commit' }
+            { text: 'git commit 가이드', link: '/guide/commit' }
           ]
         }
       ],
