@@ -7,23 +7,62 @@ export default defineConfig({
   description: "큰별문학상 사이트 개발 과정을 소개합니다.",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+
+
+    // 상단 네비게이션 바
     nav: [
-      { text: '안녕하세요!', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '시작', link: '/' },
+      { text: '소개', link: '/introduction/hello' },
+      { text: '가이드', link: '/guide/hello' },
+      { text: '블로그', link: '/blog/hello' },
+      { text: '📚큰별문학상', link: 'https://www.cnsalit.com' }
     ],
+    
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    // 사이드바
+    sidebar:
+    {
+      '/introduction/': [
+        {
+          text: '소개',
+          items: [
+            { text: '안녕하세요!', link: '/markdown-examples' },
+          ]
+        }
+      ],
 
+      '/guide/': [
+        {
+          text: '가이드',
+          items: [
+            { text: '시작에 앞서', link: '/guide/hello' },
+            { text: 'commit 가이드', link: '/guide/commit' }
+          ]
+        }
+      ],
+
+      '/blog/': [
+        {
+          text: '블로그',
+          items: [
+            { text: '시작에 앞서', link: '/markdown-examples' },
+          ]
+        }
+      ],
+    },
+
+
+    // 기타 사항들
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+      { icon: 'github', link: 'https://github.com/cnsalit' }
+    ],
+
+    editLink: {
+      pattern: 'https://github.com/cnsalit/cnsalit-docs',
+      text: '큰별문학상의 개발자라면, GitHub에서 페이지 수정하기'
+    },
+    footer: {
+      message: 'Released under the MIT License.',
+    }
   }
 })
