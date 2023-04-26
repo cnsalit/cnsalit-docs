@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "큰별문학상 개발자 문서"
   text: "큰별문학상 사이트 개발 과정을 소개합니다."
-  tagline: My great project tagline
+  tagline: 
   actions:
     - theme: brand
       text: Markdown Examples
