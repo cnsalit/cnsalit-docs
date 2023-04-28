@@ -52,6 +52,10 @@ export default defineConfig({
       ],
     },
 
+    // 검색
+    search: {
+      provider: 'local'
+    },
 
     // 기타 사항들
     socialLinks: [
@@ -63,7 +67,15 @@ export default defineConfig({
       text: '큰별문학상의 개발자라면, GitHub에서 페이지 수정하기'
     },
     footer: {
-      message: 'Released under the MIT License.',
+      message: '본 문서는 MIT License에 따라 제공됩니다.',
+    },
+    darkModeSwitchLabel: '다크 모드',
+    lastUpdatedText: '마지막 수정: ',
+    returnToTopLabel: '맨 위로',
+    sidebarMenuLabel: '목차',
+    docFooter: {
+      prev: '이전 글',
+      next: '다음 글'
     }
   }
 })
